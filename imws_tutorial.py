@@ -1,7 +1,7 @@
 from intermine.webservice import Service
 
 new_run = 'yes'
-flymine = Service('www.flymine.org/query', token = '01n6a26f47fe1f32G7c2')
+flymine = Service('www.flymine.org/query', token = TOKEN)
 for imlist in flymine.get_all_lists():
   print imlist.name
   if imlist.name.startswith('nova_'):
